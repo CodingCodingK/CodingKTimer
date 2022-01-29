@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0018abc8-646f-4d8e-920f-2d5cb95cd15c": {
+      "ProjectGuid": "0018abc8-646f-4d8e-920f-2d5cb95cd15c",
+      "DisplayName": "CodingKTimer",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "8dac4484-7903-4c30-84fa-36ee61b53ed0": {
+      "ProjectGuid": "8dac4484-7903-4c30-84fa-36ee61b53ed0",
+      "DisplayName": "test.ExampleServer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

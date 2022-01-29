@@ -1,0 +1,10 @@
+E:\My Github\timer\CodingKTimer\CodingKTimer\bin\Release\netstandard2.0\CodingKTimer.deps.json
+E:\My Github\timer\CodingKTimer\CodingKTimer\bin\Release\netstandard2.0\CodingKTimer.dll
+E:\My Github\timer\CodingKTimer\CodingKTimer\bin\Release\netstandard2.0\CodingKTimer.pdb
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.csproj.AssemblyReference.cache
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.GeneratedMSBuildEditorConfig.editorconfig
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.AssemblyInfoInputs.cache
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.AssemblyInfo.cs
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.csproj.CoreCompileInputs.cache
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.dll
+E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Release\netstandard2.0\CodingKTimer.pdb
