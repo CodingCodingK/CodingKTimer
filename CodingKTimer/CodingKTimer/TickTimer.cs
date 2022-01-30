@@ -219,7 +219,7 @@ namespace CodingKTimer
 
         public override void Reset()
         {
-            if (!packQue.IsEmpty)
+            if (packQue != null && !packQue.IsEmpty)
             {
                 WarnFunc?.Invoke("Reset:packQue is not empty.");
             }
