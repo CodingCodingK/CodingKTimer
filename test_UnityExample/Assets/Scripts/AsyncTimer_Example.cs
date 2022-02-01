@@ -6,15 +6,14 @@ using CodingKTimer;
 using PEUtils;
 using UnityEngine;
 
-public class Example1 : MonoBehaviour
+public class AsyncTimer_Example : MonoBehaviour
 {
-    public bool outUpdate = false;
     public bool useHandle = false;
     
-    private TickTimer timer;
-    int timerInternal;
-    uint interval = 66;
-    int count = 100;
+    private AsyncTimer timer;
+    public uint interval = 66;
+    public uint firstDelay = 66;
+    public int count = 100;
     int sum = 0;
     int taskId = 0;
     DateTime historyTime;
@@ -23,12 +22,10 @@ public class Example1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerInternal = outUpdate ? 0 : 10;
-        
         var cfg = new LogConfig() { loggerEnum = LoggerType.Unity};
         PELog.InitSettings(cfg);
         
-        timer = new TickTimer(timerInternal, useHandle)
+        timer = new AsyncTimer(useHandle)
         {
             LogFunc = PELog.Log,
             WarnFunc = PELog.Warn,
@@ -39,11 +36,6 @@ public class Example1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (outUpdate)
-        {
-            timer.UpdateTask();
-        }
-
         if (useHandle)
         {
             timer.HandleTask();
@@ -51,8 +43,8 @@ public class Example1 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            historyTime = DateTime.UtcNow;
-            taskId = timer.AddTask(interval, taskCB, cancelCB, count);
+            historyTime = DateTime.UtcNow.AddMilliseconds(firstDelay - interval);
+            taskId = timer.AddTask(firstDelay, taskCB, cancelCB, interval, count);
         }
         else if (Input.GetKeyDown(KeyCode.C))
         {

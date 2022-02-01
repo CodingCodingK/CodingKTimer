@@ -8,3 +8,13 @@ E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTim
 E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.csproj.CoreCompileInputs.cache
 E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.dll
 E:\My Github\timer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.pdb
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\bin\Debug\netstandard2.0\CodingKTimer.deps.json
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\bin\Debug\netstandard2.0\CodingKTimer.dll
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\bin\Debug\netstandard2.0\CodingKTimer.pdb
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.csproj.AssemblyReference.cache
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.AssemblyInfoInputs.cache
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.AssemblyInfo.cs
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.csproj.CoreCompileInputs.cache
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.dll
+C:\Github\CodingKTimer\CodingKTimer\CodingKTimer\obj\Debug\netstandard2.0\CodingKTimer.pdb

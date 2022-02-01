@@ -15,12 +15,13 @@ namespace CodingKTimer
         /// <summary>
         /// 创建定时任务
         /// </summary>
-        /// <param name="delay">定时任务时间</param>
+        /// <param name="firstDelay">第一次执行任务延迟时长</param>
         /// <param name="taskCB">定时任务回调</param>
         /// <param name="cancelCB">取消任务回调</param>
-        /// <param name="count">任务重复计数</param>
+        /// <param name="count">任务重复次数</param>
+        /// /// <param name="delay">定时任务执行频率</param>
         /// <returns>当前计时器唯一任务ID(取消用)</returns>
-        public abstract int AddTask(uint delay, Action<int> taskCB, Action<int> cancelCB, int count = 1);
+        public abstract int AddTask(uint firstDelay, Action<int> taskCB, Action<int> cancelCB, uint delay = 0, int count = 1);
 
         /// <summary>
         /// 删除定时任务

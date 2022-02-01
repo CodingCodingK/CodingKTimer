@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+9Rci6XpmNBkGNvEjqAn+IzQjJe7jsRvOM7N8dzDALkNf0IDQnU2/+a1NrGX/DMgNK4ZkUDf6ouugdd00QGXlQ==",
+  "dgSpecHash": "iI3O2w/JRlL5fWaMc13NnddELlJYuQcP58HcbfOt+4dL3a7n5eMF6k8g4IqaXn8gxFspaemOBte2A3sF3Fvw/Q==",
   "success": true,
-  "projectFilePath": "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj",
+  "projectFilePath": "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

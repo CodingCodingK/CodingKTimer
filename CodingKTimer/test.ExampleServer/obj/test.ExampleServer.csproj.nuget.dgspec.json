@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Github\\timer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj": {}
+    "C:\\Github\\CodingKTimer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj": {}
   },
   "projects": {
-    "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj": {
+    "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj",
+        "projectUniqueName": "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj",
         "projectName": "CodingKTimer",
-        "projectPath": "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj",
-        "packagesPath": "C:\\Users\\79982\\.nuget\\packages\\",
-        "outputPath": "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\obj\\",
+        "projectPath": "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj",
+        "packagesPath": "C:\\Users\\YAN JUNJIE\\.nuget\\packages\\",
+        "outputPath": "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\79982\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YAN JUNJIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,20 +66,22 @@
         }
       }
     },
-    "E:\\My Github\\timer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj": {
+    "C:\\Github\\CodingKTimer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Github\\timer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj",
+        "projectUniqueName": "C:\\Github\\CodingKTimer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj",
         "projectName": "test.ExampleServer",
-        "projectPath": "E:\\My Github\\timer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj",
-        "packagesPath": "C:\\Users\\79982\\.nuget\\packages\\",
-        "outputPath": "E:\\My Github\\timer\\CodingKTimer\\test.ExampleServer\\obj\\",
+        "projectPath": "C:\\Github\\CodingKTimer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj",
+        "packagesPath": "C:\\Users\\YAN JUNJIE\\.nuget\\packages\\",
+        "outputPath": "C:\\Github\\CodingKTimer\\CodingKTimer\\test.ExampleServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\79982\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YAN JUNJIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,8 +95,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj": {
-                "projectPath": "E:\\My Github\\timer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj"
+              "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj": {
+                "projectPath": "C:\\Github\\CodingKTimer\\CodingKTimer\\CodingKTimer\\CodingKTimer.csproj"
               }
             }
           }
@@ -122,12 +126,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.22, 3.1.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

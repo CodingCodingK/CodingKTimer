@@ -103,13 +103,13 @@ namespace CodingKTimer
                     else
                     {
                         // task.destTime += task.delay; 避免浮点数累加误差，所以采用以下方式。
-                        task.destTime = task.startTime + task.delay * (task.loopIndex + 1);
+                        task.destTime = task.startTime + task.delay * (task.loopIndex);
                         CallTaskCB(task.tid, task.taskCB);
                     }
                 }
                 else
                 {
-                    task.destTime = task.startTime + task.delay * (task.loopIndex + 1);
+                    task.destTime = task.startTime + task.delay * (task.loopIndex);
                     CallTaskCB(task.tid, task.taskCB);
                 }
             }
@@ -173,17 +173,18 @@ namespace CodingKTimer
         /// <summary>
         /// 创建任务
         /// </summary>
+        /// <param name="firstDelay">第一次执行的等待时长</param>
         /// <param name="delay"></param>
         /// <param name="taskCB"></param>
         /// <param name="cancelCB"></param>
         /// <param name="count">如果为0就无限循环，>=1就是次数</param>
         /// <returns></returns>
-        public override int AddTask(uint delay, Action<int> taskCB, Action<int> cancelCB, int count = 1)
+        public override int AddTask(uint firstDelay, Action<int> taskCB, Action<int> cancelCB, uint delay = 0, int count = 1)
         {
             int tid = GenerateTid();
             double startTime = GetUTCMs();
-            double destTime = startTime + delay;
-            TickTask task = new TickTask(tid, delay, count, destTime, taskCB, cancelCB, startTime);
+            double destTime = startTime + firstDelay;
+            TickTask task = new TickTask(tid, delay, count, destTime, taskCB, cancelCB);
 
             if (taskDic.TryAdd(tid, task))
             {
@@ -272,8 +273,7 @@ namespace CodingKTimer
                 int count, 
                 double destTime, // 实际开始时间 = startTime + delay
                 Action<int> taskCB, 
-                Action<int> cancelCB, 
-                double startTime)
+                Action<int> cancelCB)
             {
                 this.tid = tid;
                 this.delay = delay;
@@ -281,7 +281,7 @@ namespace CodingKTimer
                 this.destTime = destTime;
                 this.taskCB = taskCB;
                 this.cancelCB = cancelCB;
-                this.startTime = startTime;
+                this.startTime = destTime;
                 this.loopIndex = 0;
             }
         }

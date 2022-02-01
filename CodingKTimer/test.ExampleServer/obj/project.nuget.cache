@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "P87qSjH2ZI1TifbVSSvxx7vDXF6rEX3V0fS+5CWmJJWFVXv6IyC+1iy+Jj83JX+sC4vUwD1Eci+HeAnYr5KAtw==",
+  "dgSpecHash": "iDuk9ArslKBXANcdIcK/Ref7ebKXrFqh8OTE8xQ26gr91agGVFPsAsIA28X+fbRwwFRm6b2MEoARX1LeEXgI4Q==",
   "success": true,
-  "projectFilePath": "E:\\My Github\\timer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj",
+  "projectFilePath": "C:\\Github\\CodingKTimer\\CodingKTimer\\test.ExampleServer\\test.ExampleServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\79982\\.nuget\\packages\\pelog\\1.0.1\\pelog.1.0.1.nupkg.sha512",
-    "C:\\Users\\79982\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+    "C:\\Users\\YAN JUNJIE\\.nuget\\packages\\pelog\\1.0.1\\pelog.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

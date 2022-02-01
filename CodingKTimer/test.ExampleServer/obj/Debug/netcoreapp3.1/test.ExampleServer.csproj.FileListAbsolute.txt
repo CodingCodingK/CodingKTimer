@@ -16,3 +16,21 @@ E:\My Github\timer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.
 E:\My Github\timer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.dll
 E:\My Github\timer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.pdb
 E:\My Github\timer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.genruntimeconfig.cache
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\test.ExampleServer.exe
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\test.ExampleServer.deps.json
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\test.ExampleServer.runtimeconfig.json
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\test.ExampleServer.runtimeconfig.dev.json
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\test.ExampleServer.dll
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\test.ExampleServer.pdb
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\PELog.dll
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\CodingKTimer.dll
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\bin\Debug\netcoreapp3.1\CodingKTimer.pdb
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.csproj.AssemblyReference.cache
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.AssemblyInfoInputs.cache
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.AssemblyInfo.cs
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.csproj.CoreCompileInputs.cache
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.csproj.CopyComplete
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.dll
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.pdb
+C:\Github\CodingKTimer\CodingKTimer\test.ExampleServer\obj\Debug\netcoreapp3.1\test.ExampleServer.genruntimeconfig.cache

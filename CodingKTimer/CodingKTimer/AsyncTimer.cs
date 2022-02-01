@@ -49,14 +49,10 @@ namespace CodingKTimer
             }
         }
 
-        public override int AddTask(
-            uint delay, 
-            Action<int> taskCB, 
-            Action<int> cancelCB, 
-            int count = 1)
+        public override int AddTask(uint firstDelay, Action<int> taskCB, Action<int> cancelCB, uint delay = 0, int count = 1)
         {
             int tid = GenerateTid();
-            AsyncTask task = new AsyncTask(tid, delay, count, taskCB, cancelCB);
+            AsyncTask task = new AsyncTask(tid, firstDelay, delay, count, taskCB, cancelCB);
             RunTaskInPool(task);
 
             if (taskDic.TryAdd(tid, task))
@@ -114,17 +110,37 @@ namespace CodingKTimer
                     do
                     {
                         // 限次循环任务
+
+                        bool isFirstTime = false;
+                        int firstDelay = 0;
+                        if (task.firstDelay > 0)
+                        {
+                            firstDelay = (int)task.firstDelay;
+                            task.firstDelay = 0;
+                            isFirstTime = true;
+                        }
+
                         --task.count;
-                        ++task.loopIndex;
-                        int delay = (int)(task.delay + task.fixDelta);
+
+                        int delay = isFirstTime ? firstDelay : (int)(task.delay + task.fixDelta);
                         if (delay > 0)
                         {
                             await Task.Delay(delay, task.ct);
                         }
-                        // 计算出实际开销时间
-                        TimeSpan ts = DateTime.UtcNow - task.startTime;
-                        // 修正实际时间值 = 理论开销时间 - 实际开销时间
-                        task.fixDelta = (int)(task.delay * task.loopIndex - ts.TotalMilliseconds);
+
+                        if (isFirstTime)
+                        {
+                            task.startTime = task.startTime.AddMilliseconds(firstDelay);
+                        }
+                        else
+                        {
+                            ++task.loopIndex;
+
+                            // 计算出实际开销时间
+                            TimeSpan ts = DateTime.UtcNow - task.startTime;
+                            // 修正实际时间值 = 理论开销时间 - 实际开销时间
+                            task.fixDelta = (int)(task.delay * task.loopIndex - ts.TotalMilliseconds);
+                        }
 
                         CallBackTaskCB(task);
                     } while (task.count > 0);
@@ -134,16 +150,34 @@ namespace CodingKTimer
                     // 永久循环任务
                     while (true)
                     {
-                        ++task.loopIndex;
-                        int delay = (int)(task.delay + task.fixDelta);
+                        bool isFirstTime = false;
+                        int firstDelay = 0;
+                        if (task.firstDelay > 0)
+                        {
+                            firstDelay = (int)task.firstDelay;
+                            task.firstDelay = 0;
+                            isFirstTime = true;
+                        }
+
+                        int delay = isFirstTime ? firstDelay : (int)(task.delay + task.fixDelta);
                         if (delay > 0)
                         {
                             await Task.Delay(delay, task.ct);
                         }
-                        // 计算出实际开销时间
-                        TimeSpan ts = DateTime.UtcNow - task.startTime;
-                        // 修正实际时间值 = 理论开销时间 - 实际开销时间
-                        task.fixDelta = (int)(task.delay * task.loopIndex - ts.TotalMilliseconds);
+
+                        if (isFirstTime)
+                        {
+                            task.startTime = task.startTime.AddMilliseconds(firstDelay);
+                        }
+                        else
+                        {
+                            ++task.loopIndex;
+
+                            // 计算出实际开销时间
+                            TimeSpan ts = DateTime.UtcNow - task.startTime;
+                            // 修正实际时间值 = 理论开销时间 - 实际开销时间
+                            task.fixDelta = (int)(task.delay * task.loopIndex - ts.TotalMilliseconds);
+                        }
 
                         CallBackTaskCB(task);
                     }
@@ -207,6 +241,7 @@ namespace CodingKTimer
         {
             public int tid;
             public uint delay;
+            public uint firstDelay;
             /// <summary>
             /// 执行次数,初期值为0就是一直执行
             /// </summary>
@@ -227,12 +262,14 @@ namespace CodingKTimer
 
             public AsyncTask(
                 int tid,
+                uint firstDelay,
                 uint delay,
                 int count,
                 Action<int> taskCB,
                 Action<int> cancelCB)
             {
                 this.tid = tid;
+                this.firstDelay = firstDelay;
                 this.delay = delay;
                 this.count = count;
                 this.taskCB = taskCB;

@@ -50,33 +50,35 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Example1.cs" />
+     <Compile Include="Assets\Scripts\TickTimer_Example.cs" />
+     <Compile Include="Assets\Scripts\AsyncTimer_Example.cs" />
+     <Compile Include="Assets\Scripts\FrameTimer_Example.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/My Github/timer/test_UnityExample/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -268,10 +270,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="CodingKTimer">
- <HintPath>E:/My Github/timer/test_UnityExample/Assets/CodingKTimer_Lib/CodingKTimer.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Assets/CodingKTimer_Lib/CodingKTimer.dll</HintPath>
  </Reference>
  <Reference Include="PELog">
- <HintPath>E:/My Github/timer/test_UnityExample/Assets/CodingKTimer_Lib/PELog.dll</HintPath>
+ <HintPath>C:/Github/CodingKTimer/test_UnityExample/Assets/CodingKTimer_Lib/PELog.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
